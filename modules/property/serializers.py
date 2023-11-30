@@ -15,7 +15,6 @@ class CrawlPropertySerializer(serializers.Serializer):
     number_of_property = serializers.IntegerField(required=True, min_value=0)
 
     __default_url = "https://batdongsan.com.vn/nha-dat-ban"
-    __item_per_page = 20
 
     __options = Options()
     __options.add_argument("--no-sandbox")
